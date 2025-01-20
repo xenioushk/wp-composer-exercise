@@ -15,16 +15,11 @@ class WeatherForcast
 
     $response = $client->request('GET', $url);
 
-
     $current_weather = json_decode($response->getBody(), true);
-
-    // return $current_weather['current'];
 
     return [
       "temperature" => $current_weather['current']['temperature_2m'],
       "humidity" => $current_weather['current']['relative_humidity_2m'],
     ];
-
-    // return $response->getBody();
   }
 }
