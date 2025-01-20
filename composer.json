@@ -1,0 +1,21 @@
+{
+  "name": "xenioushk/api",
+  "description": "Custom project for BlueWindLab services API.",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "WPCOMPOSER\\": "src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.9"
+  },
+  "authors": [
+    {
+      "name": "Mahbub Alam Khan",
+      "email": "hkhan.cse@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}
